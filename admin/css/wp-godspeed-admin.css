@@ -1,0 +1,188 @@
+@font-face {
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Exo 2'), local('Exo2-Regular'), url('googlefonts-exo2.ttf') format('truetype'),
+  url('googlefonts-exo2.otf') format('opentype');
+}
+
+.wpgodspeed {
+    font-family: 'exo 2' !important;
+}
+
+.wpgodspeed .reginfo {
+    /* width: 600px; */
+}
+
+.wpgodspeed .osettings {
+    font-size: 24px !important;
+}
+
+.wpgodspeed .vpad {
+    padding-right: 67px !important;
+}
+
+.wpgodspeed .mpad {
+    padding-right: 76px !important;
+}
+
+.wpgodspeed .lpad {
+    padding-right: 22px !important;
+}
+
+.wpgodspeed .spad {
+    padding-right: 49px !important;
+}
+
+.wpgodspeed .spad2 {
+    padding-right: 36px !important;
+}
+
+.wpgodspeed .ppad {
+    padding-right: 85px !important;
+}
+
+.wpgodspeed .dpad {
+    padding-right: 24px !important;
+}
+
+.wpgodspeed .rpad {
+    padding-right: 27px !important;
+}
+
+.wpgodspeed .bracket {
+    color: #999 !important;
+    font-size: .9em !important;
+    font-weight: bold !important;
+}
+
+.wpgodspeed .form-table th {
+    padding: 9px 0px 29px 0px;
+}
+
+.wpgodspeed i {
+    color: #bfc7ce !important;
+    font-size: 1.5em !important;
+    vertical-align: -25%;
+}
+
+.wpgodspeed .dataitem {
+    color: #3595e1 !important;
+    font-weight: bold !important;
+}
+
+.wpgodspeed .dataitem-warn {
+    color: #DC3545 !important;
+    font-weight: bold !important;
+}
+
+.wpgodspeed .otitle h2 {
+    font-size: 24.5px !important;
+}
+
+.wpgodspeed p, .wpgodspeed table {
+    font-size: 18px;
+}
+
+.wpgodspeed .progress {
+    font-size: 22px;
+    font-weight: bold;
+    height: 40px;
+}
+
+.wpgodspeed .dist-create-status {
+    font-size: 15px !important;
+    font-weight: bold !important;
+    height: 25px !important;
+    width: 255px !important;
+    margin-top: 15px !important;
+}
+
+.wpgodspeed .card, .wpgodspeed .card-body {
+    width: 420px;
+}
+
+.wpgodspeed table {
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.wpgodspeed td {
+    padding: 5px;
+}
+
+.wpgodspeed label {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.wpgodspeed i {
+    padding-left: 7px;
+    font-size: 20px !important;
+    vertical-align: -35%;
+}
+
+.wpgodspeed .fa-info-circle {
+    font-size: 16px !important;
+    vertical-align: -7%;
+}
+
+.wpgodspeed .fa-spin {
+    padding-left: 0px;
+    margin-right: 4px;
+    font-size: 20px !important;
+    vertical-align: -5%;
+}
+
+.wpgodspeed .error {
+    font-size: 20px;
+    color: red;
+}
+
+.wpgodspeed #sync {
+    margin-top: 10px;
+    height: 40px;
+}
+
+.wpgodspeed .progress-bar,
+.wpgodspeed .btn-primary,
+.wpgodspeed .btn-primary:not(:disabled):not(.disabled).active,
+.wpgodspeed .btn-primary:not(:disabled):not(.disabled):active {
+    background-color: #3595e1;
+}
+
+.stripe-button-el {
+    background-image: -webkit-linear-gradient(#3595e1,#015e94);
+    background-image: linear-gradient(#3595e1,#015e94);
+}
+
+.stripe-button-el span {
+    height: 50px;
+    line-height: 48px;
+    background: #3595e1;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Exo2";
+    font-size: 21px;
+}
+
+.godspeed-data-warning-container,
+.godspeed-cdn-warning-container {
+    height: auto;
+    overflow: hidden;
+}
+
+.godspeed-data-warning-content-left,
+.godspeed-cdn-warning-content-left {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 5px;
+    overflow: hidden;
+}
+
+.godspeed-data-warning-content-right,
+.godspeed-cdn-warning-content-right {
+    width: auto;
+    overflow: hidden;
+}
