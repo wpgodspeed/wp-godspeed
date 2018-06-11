@@ -570,11 +570,12 @@ class WP_Godspeed_Admin {
 		$dismissed = get_option( $this->option_name . '_notice_distribution_dismissed' );
 		if ( $dist_id && $dismissed != 1 )
 		{
-		?>
-			<div class="notice notice-success is-dismissible notice-distribution">
-				<p><h3>WP Godspeed</h3><?php _e( 'Success! Your CDN distribution has been deployed and is <a href="admin.php?page=' . $this->plugin_name . '-options">ready for activation</a>.', 'wp-godpseed' ); ?></p>
-			</div>
-		<?php
+			$this->notice_registration_dismissed();
+			?>
+				<div class="notice notice-success is-dismissible notice-distribution">
+					<p><h3>WP Godspeed</h3><?php _e( 'Success! Your CDN distribution has been deployed and is <a href="admin.php?page=' . $this->plugin_name . '-options">ready for activation</a>.', 'wp-godpseed' ); ?></p>
+				</div>
+			<?php
 		}
 	}
 

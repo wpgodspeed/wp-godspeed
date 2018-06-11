@@ -300,6 +300,7 @@ jQuery(document).ready(function($){
 
 					$.ajax({
 						url: ajaxurl,
+						async: false,
 						type: 'POST',
 						dataType: 'json',
 						data: {
@@ -313,6 +314,7 @@ jQuery(document).ready(function($){
 						error: function(res){
 							console.log('registration_callback failed');
 							console.log(res);
+							window.location.reload();
 						}
 					})
 

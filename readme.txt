@@ -59,6 +59,10 @@ It works.
 
 == Changelog ==
 
+= 0.9.4 =
+* [Fixed] Issue with ajax registration
+* [Changed] Registration auto-dismissed if ignored
+
 = 0.9.3 =
 * [Changed] Chart.js upgrade to 2.7.2
 * [Fixed] Minor issue with plugin debug/reset
