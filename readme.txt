@@ -55,7 +55,7 @@ A CDN is a geographically disparate network comprised of hundreds of servers spr
 
 = How does a CDN Work? =
 
-It works via a series of protocols which orchestrate the synchronization and transmission of static resources (such as images, various types of audio/video media, archives, documents and PDFs, etc.) from your web server, to the global network of distributed endpoints.
+It works via a series of protocols which orchestrate the synchronization and transmission of static resources (such as images, various types of audio/video media, archives, documents and PDFs, [etc](https://github.com/wpgodspeed/wp-godspeed/blob/master/includes/class-wp-godspeed-cdn-stack.php#L105).) from your web server, to the global network of distributed endpoints.
 
 WP Godspeed CDNs feature [hundreds of network endpoints spanning the globe](https://www.google.com/maps/d/viewer?mid=1Gs-4KuyCiFp1fBK8uwfhCNzcVlQ&hl=en&usp=sharing) that serve your site’s content.
 
@@ -130,6 +130,10 @@ We have enabled additional services to assist with auditing purposes.
 1. Will be added shortly
 
 == Changelog ==
+
+= 0.9.5 =
+* [Added] CDN stack global threshold
+* [changed] Test version bump
 
 = 0.9.4 =
 * [Fixed] Issue with ajax registration
