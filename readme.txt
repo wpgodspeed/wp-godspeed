@@ -1,4 +1,4 @@
-=== WP Godspeed - An instant bolt-on CDN plugin for WordPress ===
+=== WP Godspeed ===
 
 Contributors: wpgodspeed
 Tags: cdn, content delivery network, performance, lazy load
@@ -47,13 +47,83 @@ Using FTP
 
 == Frequently Asked Questions ==
 
-= Does WP Godspeed use SSL? =
+= What is a CDN? =
 
-Yes.
+CDN is an acronym for Content Delivery Network.
 
-= How does WP Godspeed affect my EV SSL certificate? =
+A CDN is a geographically disparate network comprised of hundreds of servers spread across the globe, all of which serve static resources to visitors on behalf of your website.
 
-It works.
+= How does a CDN Work? =
+
+It works via a series of protocols which orchestrate the synchronization and transmission of static resources (such as images, various types of audio/video media, archives, documents and PDFs, etc.) from your web server, to the global network of distributed endpoints.
+
+WP Godspeed CDNs feature [hundreds of network endpoints spanning the globe](https://www.google.com/maps/d/viewer?mid=1Gs-4KuyCiFp1fBK8uwfhCNzcVlQ&hl=en&usp=sharing) that serve your site’s content.
+
+= Why do I need a WordPress CDN? =
+
+**Speed & Performance**
+
+Having a WordPress CDN (versus not having one) makes all the difference in the world. Offloading the largest files on your site to the CDN has clear performance implications.
+
+Let’s say for example, that your site lives on a server in New York City and a visitor is accessing your site from Stockholm. Instead of downloading every single file from your server in NYC (with lengthy network latency & round trip times for every request) the CDN automatically serves your site’s content directly to the visitor via the network endpoint which is closest in proximity to the visitor.
+
+**Resiliance**
+
+With regard to the performance of your site’s server, the CDN is extremely efficient when it comes to removing traffic load from the server, and distributing it evenly throughout the CDN. By reducing the overall load on your server, you will drastically improve the stability and performance of the server itself.
+
+**Enhanced User Experience**
+
+Good user experience (UX) means that your site will notice a decline in bounce rate, more page views per visitor session, and thus more page views for your site overall.
+
+In other words, a faster site means a better user experience. And better UX means more traffic.
+
+**Increased SEO**
+
+Google has clearly shown favoritism in the seach results for sites which are both faster and secure, versus sites which have not paid any attention to performance optimization or running full SSL.
+
+Simply put, a faster site also means better SEO, page rank, and an increase in your site’s organic traffic levels.
+
+= What makes this WordPress CDN plugin different? =
+
+Some of the most popular plugins in the WordPress community such as W3 Total Cache, WP Super Cache, WP Rocket, etc., will enable the use of a CDN (if you have one, or if you have manually setup your own CDN), but none of which also provide the CDN.
+
+WP Godspeed not only enables the CDN for your WordPress site, but also is the CDN service, and provides world class CDN service for your WordPress site with the simplicity of one-click setup.
+
+In providing these CDN services, this plugin drastically differs from other plugins which are simply performance-enabling, but still require tons of technical expertise and manual configuration.
+
+= Does this support HTTP/2? =
+
+Yes, it does.
+
+The protocol for all SSL-enabled sites is HTTP/2 by default.
+
+= Does this support SSL? =
+
+Yes, WP Godspeed supports advanced protocols and ciphers, and advanced SSL features, such as Session Tickets, OCSP Stapling, and Perfect Forward Secrecy.
+
+Rest assured that your WP Godspeed CDN will operate under the highest levels of security using modern security standards.
+
+= Will this CDN plugin work if I don't have SSL? =
+
+Absolutely. We use a security policy that matches the viewer protocol for your site. This means that if you don’t have SSL installed, all CDN resources (while still accessible via secure HTTPS links) will be served over plain text along with the rest of your site.
+
+However, if you do have SSL installed, all CDN resources will be served exlcusively over SSL as well. There’s no need to worry about mixed content browser warnings, and there’s no risk of breaking your site’s existing SSL functionality by using the WP Godspeed CDN.
+
+= Will this work if I have an "EV" SSL certificate installed? =
+
+Yes, it will work.
+
+An extended value (EV) certificate is a type of SSL certificate which embeds additional information about your site/business into the certificate. It instructs the browser to display the name of your business as a green badge next to the browser address bar.
+
+Typically, EV certificates are expensive compared to the more common domain validated (DV) certificates, as they require actual human verification of your business entity.
+
+Since the WP Godspeed CDN does not mask the IP address of your server, this will not affect the functionality of your site’s existing SSL, regardless of which type of certificate is presently installed (whether DV or EV).
+
+= Is this standards compliant? =
+
+Yes, every WP Godspeed CDN is PCI DSS compliant and HIPAA eligible.
+
+We have enabled additional services to assist with auditing purposes.
 
 == Screenshots ==
 
