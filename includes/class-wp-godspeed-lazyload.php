@@ -76,6 +76,7 @@ if ( ! class_exists( 'WP_Godspeed_Lazyload_Plugin' ) )
 class WP_Godspeed_Lazyload extends WP_Godspeed_Lazyload_Plugin {
 
 	public $lazyload_init;
+	public $threshold;
 	public $images;
 	public $iframes;
 	public $youtube;
@@ -96,6 +97,7 @@ class WP_Godspeed_Lazyload extends WP_Godspeed_Lazyload_Plugin {
 		$this->youtube        = get_option( $this->option_name . '_lazyload_youtube' );
 		$this->debug          = get_option( $this->option_name . '_lazyload_debug' );
 		$this->debug          = FALSE;
+		$this->threshold      = 1500; //500
 		$this->pages_enabled  = ''; //[ 1212 ];
 		$this->pages_disabled = ''; //[ 1308 ];
 
@@ -150,7 +152,7 @@ class WP_Godspeed_Lazyload extends WP_Godspeed_Lazyload_Plugin {
 		}
 
 		//filters the threshold at which lazyload is triggered
-		$threshold = apply_filters( 'wpgods_lazyload_threshold', 1500 );
+		$threshold = apply_filters( 'wpgods_lazyload_threshold', $this->threshold );
 
 		echo '<script>(function(w, d) {
 		var b = d.getElementsByTagName("body")[0];

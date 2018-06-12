@@ -1,4 +1,4 @@
-=== WP Godspeed ===
+=== WP Godspeed - One click CDN ===
 
 Contributors: wpgodspeed
 Tags: cdn, content delivery network, performance, lazy load
@@ -14,7 +14,7 @@ WP Godspeed is an instant bolt-on CDN plugin for WordPress.
 
 == Description ==
 
-*Important: while this plugin has been tested thoroughly, if something isn't working for you, don't give it a poor rating. Instead, [please file an issue on Github](https://github.com/wpgodspeed/wp-godspeed/issues) and we'll fix any issues for you immediately. Thank you!*
+*Important: while this CDN plugin has been tested thoroughly, if something isn't working for you, don't give it a poor rating. Instead, [please file an issue on Github](https://github.com/wpgodspeed/wp-godspeed/issues) and we'll fix any issues for you immediately. Thank you!*
 
 While most caching plugins will enable the use of a CDN, [WP Godspeed](https://wpgodspeed.io) *is* the CDN service. It's super easy to setup & use on all of your WordPress sites, with a one click setup process.
 
