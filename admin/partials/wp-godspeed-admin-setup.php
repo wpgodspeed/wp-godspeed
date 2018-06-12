@@ -162,8 +162,10 @@ if ( $status == 'registered' )
 								aria-hidden="true"
 								data-trigger="hover"
 								data-toggle="popover"
+								data-html="true"
+								data-delay='{"hide": 2500}'
 								title="Privacy Notice"
-								data-content="When you click the button, these three pieces of information will be submitted to the WP Godspeed service, but your information will be safeguarded and will never be shared with any 3rd parties, ever. We hate SPAM and take this very seriously. You may review our Privacy Policy at wpgodspeed.io/privacy for more information.">
+								data-content="When you click the button, these three pieces of information will be submitted to the WP Godspeed service, but your information will be safeguarded and will never be shared with any 3rd parties, ever. We hate SPAM and take this very seriously. You may review our <a href='https://wpgodspeed.io/privacy'>Privacy Policy</a> for GDPR specifics or more information in general.">
 							</i>
 					</form>
 					<div id="error_reg" class="error" style="display:none"></div>
@@ -181,15 +183,15 @@ if ( $status == 'registered' )
 					<tr><td>AUTH TOKEN</td><td><?php echo get_option( $this->option_name . '_auth_token' ); ?></td></tr>
 				</tbody> -->
 			</table>
-			<p>Before you can enable the Godspeed CDN for your site, we'll need to create the distribution.</p>
+			<p>Before you can enable the Godspeed CDN for your site, we'll need to setup the CDN.</p>
 			<form id="create_distribution" action="" method="POST">
-				<button type="button" id="submit_create_dist" class="btn btn-primary btn-lg">Create CDN Distribution</button>
+				<button type="button" id="submit_create_dist" class="btn btn-primary btn-lg">Setup the CDN</button>
 					<i class="fa fa-lg fa-info-circle"
 					aria-hidden="true"
 					data-trigger="hover"
 					data-toggle="popover"
 					title="FYI"
-					data-content="This process usually takes about 30 minutes to complete. You'll get an admin notification just as soon as it's ready."></i>
+					data-content="The setup process usually takes about 30 minutes to complete. You'll get an admin notification just as soon as it's ready."></i>
 			</form>
 			<div id="dist_result" style="display:none;">
 				<div class="progress dist-create-status">

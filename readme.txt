@@ -1,4 +1,4 @@
-=== WP Godspeed - One click CDN ===
+=== Instant WordPress CDN - WP Godspeed ===
 
 Contributors: wpgodspeed
 Tags: cdn, content delivery network, content distrubution network, godspeed cdn, performance, lazy load
@@ -27,13 +27,11 @@ The plugin intentionally does not mess with CSS or JS files, so there's very lit
 == Installation ==
 
 **Using The WordPress Dashboard**
-
 1. Navigate to **Add New** in the Plugins dashboard menu
 2. In the search field, type **WP Godspeed** and press enter
 3. Click the **Install** button, and then **Activate**
 
 **Uploading in WordPress Dashboard**
-
 1. Navigate to **Add New** in the Plugins dashboard menu
 2. Click the **Upload Plugin** button
 3. Select **wp-godspeed.zip** from your computer
@@ -41,7 +39,6 @@ The plugin intentionally does not mess with CSS or JS files, so there's very lit
 5. Activate the plugin in the Plugin dashboard
 
 **Using FTP**
-
 1. Download **wp-godspeed.zip**
 2. Extract the **wp-godspeed** directory to your computer
 3. Upload the **wp-godspeed** directory to the /wp-content/plugins/ directory
@@ -126,6 +123,10 @@ Since the WP Godspeed CDN does not mask the IP address of your server, this will
 Yes, every WP Godspeed CDN is PCI DSS compliant and HIPAA eligible.
 
 We have enabled additional services to assist with auditing purposes.
+
+= Does the plugin support Multisite? =
+
+Sorry, the plugin does not support Multisite at this time.
 
 == Screenshots ==
 

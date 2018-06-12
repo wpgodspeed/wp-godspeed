@@ -127,7 +127,7 @@ jQuery(document).ready(function($){
 		if (ajax_vars.cdn_processing == 1 || createClicked == true){
 			if (ajax_vars.hook == 'wp-godspeed_page_wp-godspeed-setup'){
 				$('#submit_create_dist').prop('disabled', true);
-				$('#submit_create_dist').html("<i class='fa fa-gear fa-spin' style='color:#ffffff !important;'></i> Creating distribution");
+				$('#submit_create_dist').html("<i class='fa fa-gear fa-spin' style='color:#ffffff !important;'></i> Preparing the CDN");
 			}
 
 			setTimeout(function(){
