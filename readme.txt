@@ -1,7 +1,7 @@
 === WP Godspeed - One click CDN ===
 
 Contributors: wpgodspeed
-Tags: cdn, content delivery network, performance, lazy load
+Tags: cdn, content delivery network, content distrubution network, godspeed cdn, performance, lazy load
 Requires at least: 4.6
 Tested up to: 4.9.6
 Requires PHP: 5.6
@@ -20,29 +20,31 @@ While most caching plugins will enable the use of a CDN, [WP Godspeed](https://w
 
 WP Godspeed makes your site load really fast by offloading static resources (such as images, audio/video, archives, etc.) to your site's very own lightning fast global CDN.
 
-It includes 5GB of transfer for free every month, and upgrade plans start at $12 for 25GB.
+It includes 5GB of transfer free every month, and upgrade plans start at $12 for 25GB.
 
 The plugin intentionally does not mess with CSS or JS files, so there's very little risk for breaking your site.
 
 == Installation ==
 
-Using The WordPress Dashboard
-1. Navigate to the 'Add New' in the plugins dashboard
-2. Search for 'WP Godspeed'
-3. Click 'Install Now'
-4. Activate the plugin on the Plugin dashboard
+**Using The WordPress Dashboard**
 
-Uploading in WordPress Dashboard
-1. Navigate to the 'Add New' in the plugins dashboard
-2. Navigate to the 'Upload' area
-3. Select wp-godspeed.zip from your computer
-4. Click 'Install Now'
+1. Navigate to **Add New** in the Plugins dashboard menu
+2. In the search field, type **WP Godspeed** and press enter
+3. Click the **Install** button, and then **Activate**
+
+**Uploading in WordPress Dashboard**
+
+1. Navigate to **Add New** in the Plugins dashboard menu
+2. Click the **Upload Plugin** button
+3. Select **wp-godspeed.zip** from your computer
+4. Click **Install Now**
 5. Activate the plugin in the Plugin dashboard
 
-Using FTP
-1. Download wp-godspeed.zip
-2. Extract the wp-godspeed directory to your computer
-3. Upload the wp-godspeed directory to the /wp-content/plugins/ directory
+**Using FTP**
+
+1. Download **wp-godspeed.zip**
+2. Extract the **wp-godspeed** directory to your computer
+3. Upload the **wp-godspeed** directory to the /wp-content/plugins/ directory
 4. Activate the plugin in the Plugin dashboard
 
 == Frequently Asked Questions ==
