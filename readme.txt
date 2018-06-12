@@ -16,7 +16,7 @@ WP Godspeed is an instant bolt-on CDN plugin for WordPress.
 
 *Important: while this plugin has been tested thoroughly, if something isn't working for you, don't give it a poor rating. Instead, [please file an issue on Github](https://github.com/wpgodspeed/wp-godspeed/issues) and we'll fix any issues for you immediately. Thank you!*
 
-While most caching plugins will enable the use of a CDN, WP Godspeed *is* the CDN service. It's super easy to setup & use on all of your WordPress sites, with a one click setup process.
+While most caching plugins will enable the use of a CDN, [WP Godspeed](https://wpgodspeed.io) *is* the CDN service. It's super easy to setup & use on all of your WordPress sites, with a one click setup process.
 
 WP Godspeed makes your site load really fast by offloading static resources (such as images, audio/video, archives, etc.) to your site's very own lightning fast global CDN.
 
