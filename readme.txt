@@ -13,8 +13,6 @@ WP Godspeed is an instant bolt-on CDN plugin for WordPress.
 
 == Description ==
 
-*Important: while this CDN plugin has been tested thoroughly, if something isn't working for you, don't give it a poor rating. Instead, [please file an issue on Github](https://github.com/wpgodspeed/wp-godspeed/issues) and we'll fix any issues for you immediately. Thank you!*
-
 A **content delivery network (aka CDN)** is a global network of servers which expedite the delivery of your site's content on behalf of your server. The primary benefits of a CDN are extensive, but mainly you get more  reliability, scalability, and performance. The **WP Godspeed CDN plugin** helps you to easily connect a CDN to WordPress.
 
 = What does it do exactly? =
@@ -35,6 +33,8 @@ WP Godspeed makes your site load really fast by offloading static resources (suc
 It includes 5GB of transfer free every month, and upgrade plans start at $12 for 25GB.
 
 The plugin intentionally does not mess with CSS or JS files, so there's very little risk for breaking your site.
+
+*Important: while this CDN plugin has been tested thoroughly, if something isn't working for you, don't give it a poor rating. Instead, [please file an issue on Github](https://github.com/wpgodspeed/wp-godspeed/issues) and we'll fix any issues for you immediately. Thank you!*
 
 == Installation ==
 
