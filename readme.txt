@@ -15,7 +15,7 @@ WP Godspeed is an instant bolt-on CDN plugin for WordPress.
 
 A **content delivery network (CDN)** is a global network of servers which expedite the delivery of your site's content on behalf of your server. The primary benefits of a CDN are extensive, but mainly you get more  reliability, scalability, and performance. The **WP Godspeed CDN plugin** helps you to easily connect a CDN to WordPress.
 
-= What does this plugin do exactly? =
+= What does this CDN plugin do exactly? =
 
 The WP Godspeed CDN plugin has been created to serve static content directly via CDN URLs. It will first setup your site's very own CDN. Then, you can simply activate/deactivate the CDN on the options page.
 
@@ -24,7 +24,7 @@ The WP Godspeed CDN plugin has been created to serve static content directly via
 * Serves wp-content resources from CDN links
 * CDN Automatically detects HTTP or HTTPS protcol
 * Reports daily usage + historical data for 6 months
-* Lazy load images/iframes/videos
+* Lazy load images/iframes/YouTube
 
 While most caching plugins will enable the use of a CDN, [WP Godspeed](https://wpgodspeed.io) *is* the CDN service provider. It's super easy to setup & use on all of your WordPress sites, with a one click setup process.
 
