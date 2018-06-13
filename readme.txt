@@ -1,12 +1,11 @@
 === Instant WordPress CDN - WP Godspeed ===
 
-Contributors: wpgodspeed
+Contributors: godspeedcdn, wpgodspeed
 Tags: cdn, content delivery network, content distrubution network, godspeed cdn, performance, lazy load
 Requires at least: 4.6
 Tested up to: 4.9.6
 Requires PHP: 5.6
 Stable tag: trunk
-Donate link: https://wpgodspeed.io/donate
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,7 +15,20 @@ WP Godspeed is an instant bolt-on CDN plugin for WordPress.
 
 *Important: while this CDN plugin has been tested thoroughly, if something isn't working for you, don't give it a poor rating. Instead, [please file an issue on Github](https://github.com/wpgodspeed/wp-godspeed/issues) and we'll fix any issues for you immediately. Thank you!*
 
-While most caching plugins will enable the use of a CDN, [WP Godspeed](https://wpgodspeed.io) *is* the CDN service. It's super easy to setup & use on all of your WordPress sites, with a one click setup process.
+A **content delivery network (aka CDN)** is a global network of servers which expedite the delivery of your site's content on behalf of your server. The primary benefits of a CDN are extensive, but mainly you get more  reliability, scalability, and performance. The **WP Godspeed CDN plugin** helps you to easily connect a CDN to WordPress.
+
+= What does it do exactly? =
+
+The WP Godspeed CDN plugin has been created to serve your static content directly via CDN URLs.
+
+= Features =
+
+* Serves wp-content resources from CDN links
+* Automatically detects HTTP or HTTPS protcol
+* Reports daily usage + historical data for 6 months
+* Lazy load images/iframes/videos
+
+While most caching plugins will enable the use of a CDN, [WP Godspeed](https://wpgodspeed.io) *is* the CDN service provider. It's super easy to setup & use on all of your WordPress sites, with a one click setup process.
 
 WP Godspeed makes your site load really fast by offloading static resources (such as images, audio/video, archives, etc.) to your site's very own lightning fast global CDN.
 
@@ -128,9 +140,14 @@ We have enabled additional services to assist with auditing purposes.
 
 Sorry, the plugin does not support Multisite at this time.
 
+= Author =
+
+* [GodspeedCDN](https://wpgodspeed.com "GodspeedCDN")
+* [WPGodspeed](https://wpgodspeed.com "WPGodspeed")
+
 == Screenshots ==
 
-1. Will be added shortly
+1. CDN usage statistics
 
 == Changelog ==
 
