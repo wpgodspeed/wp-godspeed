@@ -22,7 +22,7 @@ The WP Godspeed CDN plugin has been created to serve static content directly via
 = Features =
 
 * Serves wp-content resources from CDN links
-* CDN Automatically detects HTTP or HTTPS protcol
+* CDN automatically detects correct HTTP/HTTPS protocol
 * Reports daily usage + historical data for 6 months
 * Lazy load images/iframes/YouTube
 
