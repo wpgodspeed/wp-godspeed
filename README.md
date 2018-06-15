@@ -26,6 +26,10 @@ It includes 5GB of transfer for free every month, and upgrade plans start at $12
 
 The plugin intentionally does not mess with CSS or JS files, so there's very little risk for breaking your site.
 
+## Read Before Downloading or Cloning From This Repository
+
+This repository is for development purposes. If you checkout this repository, or download the provided zip file, you must install the plugin manually. If you do not know how to do that, or do not wish to, please install via the WordPress admin plugin section.
+
 ## Slack
 
 We have a Slack team for WP Godspeed. Please [click here for an invite](https://wpgodspeed.io/slack) & you'll be automatically added to the _#general_ channel.
