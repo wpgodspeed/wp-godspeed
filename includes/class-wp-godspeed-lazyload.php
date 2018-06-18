@@ -157,7 +157,7 @@ class WP_Godspeed_Lazyload extends WP_Godspeed_Lazyload_Plugin {
 		echo '<script>(function(w, d) {
 		var b = d.getElementsByTagName("body")[0];
 		var s = d.createElement("script"); s.async = true;
-		s.src = "/wp-content/plugins/wp-godspeed/public/js/lazyload.js";
+		s.src = "' . plugin_dir_url( __DIR__ ) . 'public/js/lazyload.js";
 		w.lazyLoadOptions = {
 			elements_selector: "img, iframe",
 			data_src: "lazy-src",

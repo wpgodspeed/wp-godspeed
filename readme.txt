@@ -151,9 +151,13 @@ Sorry, the plugin does not support Multisite at this time.
 
 == Changelog ==
 
+= 0.9.6 =
+* [Fixed] Lazyload js path
+* [Changed] Verbage & terminology to be more clear
+
 = 0.9.5 =
 * [Added] CDN stack global threshold
-* [changed] Test version bump
+* [Changed] Test version bump
 
 = 0.9.4 =
 * [Fixed] Issue with ajax registration

@@ -573,7 +573,7 @@ class WP_Godspeed_Admin {
 			$this->notice_registration_dismissed();
 			?>
 				<div class="notice notice-success is-dismissible notice-distribution">
-					<p><h3>WP Godspeed</h3><?php _e( 'Success! Your CDN distribution has been deployed and is <a href="admin.php?page=' . $this->plugin_name . '-options">ready for activation</a>.', 'wp-godpseed' ); ?></p>
+					<p><h3>WP Godspeed</h3><?php _e( 'Success! Your CDN has been setup and is <a href="admin.php?page=' . $this->plugin_name . '-options">ready for activation</a>.', 'wp-godpseed' ); ?></p>
 				</div>
 			<?php
 		}
