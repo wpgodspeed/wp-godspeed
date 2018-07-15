@@ -129,7 +129,7 @@ class WP_Godspeed_Admin {
 		}
 
 		//bootstrap css affects all of wordpress admin
-		wp_enqueue_style( 'bootstrap4-css', plugin_dir_url( __DIR__ ) . 'vendor/twbs/bootstrap/dist/css/bootstrap.min.css', array(), '4.1.1', 'all' );
+		wp_enqueue_style( 'bootstrap4-css', plugin_dir_url( __DIR__ ) . 'vendor/twbs/bootstrap/dist/css/bootstrap.min.css', array(), '4.1.2', 'all' );
 
 	}
 
@@ -153,7 +153,7 @@ class WP_Godspeed_Admin {
 		 */
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/wp-godspeed-admin.js', array( 'jquery' ), $this->version, false );
-		wp_enqueue_script( 'bootstrap4-js', plugin_dir_url( __DIR__ ) . 'vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js', false, '4.1.1', false );
+		wp_enqueue_script( 'bootstrap4-js', plugin_dir_url( __DIR__ ) . 'vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js', false, '4.1.2', false );
 
 		$processing = get_option( $this->option_name . '_cdn_processing' );
 		$status     = get_option( $this->option_name . '_status' );

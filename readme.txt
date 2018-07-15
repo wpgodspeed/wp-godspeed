@@ -3,7 +3,7 @@
 Contributors: godspeedcdn, wpgodspeed
 Tags: cdn, content delivery network, content distrubution network, godspeed cdn, performance, lazy load
 Requires at least: 4.6
-Tested up to: 4.9.6
+Tested up to: 4.9.7
 Requires PHP: 5.6
 Stable tag: trunk
 License: GPLv2 or later
@@ -150,6 +150,9 @@ Sorry, the plugin does not support Multisite at this time.
 1. CDN usage statistics
 
 == Changelog ==
+
+= 0.9.7 =
+* [Changed] Bootstrap 4.1.2
 
 = 0.9.6 =
 * [Fixed] Lazyload js path
