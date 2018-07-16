@@ -12,10 +12,6 @@ cache:
     - /tmp/phpcs
     - /tmp/sniffs
 
-stages:
-  - test
-  - deploy
-
 matrix:
   include:
 #    - php: 7.2
@@ -72,3 +68,7 @@ script:
   - if [[ "$SNIFF" == "1" ]]; then $PHPCS_DIR/bin/phpcs -p . --standard=phpcs.xml; fi
   # Run PHPUnit
   - if [[ ! -z "$WP_VERSION" ]]; then phpunit; fi
+
+stages:
+  - test
+  - deploy
