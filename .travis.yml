@@ -17,17 +17,17 @@ matrix:
 #    - php: 7.2
 #      env: SNIFF=1
     - stage: test
-	  - php: 7.1
-		env: WP_VERSION=latest
-	  - php: 7.0
-		env: WP_VERSION=latest
-		php: 5.6
-		env: WP_VERSION=latest
-		php: 5.4
-		env: WP_VERSION=latest
-		php: 5.3
-		env: WP_VERSION=latest
-		dist: precise
+	  php: 7.1
+	  env: WP_VERSION=latest
+	  php: 7.0
+	  env: WP_VERSION=latest
+	  php: 5.6
+	  env: WP_VERSION=latest
+	  php: 5.4
+	  env: WP_VERSION=latest
+	  php: 5.3
+	  env: WP_VERSION=latest
+	  dist: precise
 	  php: 5.3
 	  env: WP_VERSION=4.6
 	  dist: precise
@@ -36,6 +36,7 @@ matrix:
         - GIT_REPO="https://github.com/wpgodspeed/wp-godspeed"
         - PLUGIN_NAME="wp-godspeed"
         - ASSETS_DIR="assets"
+      install: skip
       script: bin/svnsync
 
 before_script:
@@ -65,6 +66,6 @@ script:
   # Run deploy to WordPress SVN
   #- if [[ "$DEPLOY" == true ]]; then bin/svnsync; fi
 
-stages:
-  - test
-  - deploy
+#stages:
+#  - test
+#  - deploy
