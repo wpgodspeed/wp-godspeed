@@ -68,8 +68,8 @@ deploy:
       branch: add-wordpress-plugin-deployment
     on:
       php: 7.1
-      tags: false
-      repo: wpgodspeed/wp-godspeed
+#      tags: false
+#      repo: wpgodspeed/wp-godspeed
     slug: wp-godspeed
     username: wpgodspeed
     password: $WORDPRESS_ORG_PASSWORD
