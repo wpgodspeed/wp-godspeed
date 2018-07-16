@@ -7,7 +7,7 @@
 * Contributors: [WP Godspeed](https://github.com/wpgodspeed)
 * Tags: cdn, content delivery network, performance, lazy load
 * Requires at least: 4.6
-* Tested up to: 4.9.6
+* Tested up to: 4.9.7
 * Requires PHP: 5.6
 * Stable tag: trunk
 * Donate link: https://wpgodspeed.io/donate
