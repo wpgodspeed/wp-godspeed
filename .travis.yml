@@ -61,16 +61,16 @@ script:
 #before_deploy:
 #  - mkdir build
  
-#deploy:
-#  - provider: wordpress-plugin
-#    edge:
-#      source: TypistTech/dpl
-#      branch: add-wordpress-plugin-deployment
-#    on:
-#      php: 7.1
-#      tags: false
-#      repo: wpgodspeed/wp-godspeed
-#    slug: wp-godspeed
-#    username: wpgodspeed
-#    password: $WORDPRESS_ORG_PASSWORD
-#    build_dir: build
+deploy:
+  - provider: wordpress-plugin
+    edge:
+      source: TypistTech/dpl
+      branch: add-wordpress-plugin-deployment
+    on:
+      php: 7.1
+      tags: false
+      repo: wpgodspeed/wp-godspeed
+    slug: wp-godspeed
+    username: wpgodspeed
+    password: $WORDPRESS_ORG_PASSWORD
+    build_dir: $TRAVIS_BUILD_DIR
