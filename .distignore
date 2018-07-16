@@ -8,7 +8,6 @@
 Thumbs.db
 behat.yml
 bin
-build.sh
 circle.yml
 composer.json
 composer.lock
