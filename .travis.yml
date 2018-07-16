@@ -22,6 +22,7 @@ matrix:
         - GIT_REPO="https://github.com/wpgodspeed/wp-godspeed"
         - PLUGIN_NAME="wp-godspeed"
         - ASSETS_DIR="assets"
+        - DEPLOY=true
     - php: 7.0
       env: WP_VERSION=latest
     - php: 5.6
@@ -59,23 +60,5 @@ script:
   - if [[ "$SNIFF" == "1" ]]; then $PHPCS_DIR/bin/phpcs -p . --standard=phpcs.xml; fi
   # Run PHPUnit
   - if [[ ! -z "$WP_VERSION" ]]; then phpunit; fi
-#  - xargs rm -fr <.distignore
-#  - ls -lsa
-  - bin/svnsync
-
-#before_deploy:
-#  - mkdir build
- 
-#deploy:
-#  - provider: wordpress-plugin
-#    edge:
-#      source: TypistTech/dpl
-#      branch: add-wordpress-plugin-deployment
-#    on:
-#      php: 7.1
-#      tags: false
-#      repo: wpgodspeed/wp-godspeed
-#    slug: wp-godspeed
-#    username: wpgodspeed
-#    password: $WORDPRESS_ORG_PASSWORD
-#    build_dir: $TRAVIS_BUILD_DIR
+  # Run deploy to WordPress SVN
+  - if [[ "$DEPLOY" == true ]]; then bin/svnsync; fi
