@@ -16,25 +16,27 @@ matrix:
   include:
 #    - php: 7.2
 #      env: SNIFF=1
-    - php: 7.1
+    - stage: test
+		- php: 7.1
+		  env: WP_VERSION=latest
+		- php: 7.0
+		  env: WP_VERSION=latest
+		- php: 5.6
+		  env: WP_VERSION=latest
+		- php: 5.4
+		  env: WP_VERSION=latest
+		- php: 5.3
+		  env: WP_VERSION=latest
+		  dist: precise
+		- php: 5.3
+		  env: WP_VERSION=4.6
+		  dist: precise
+    - stage: deploy
       env:
-        - WP_VERSION=latest
         - GIT_REPO="https://github.com/wpgodspeed/wp-godspeed"
         - PLUGIN_NAME="wp-godspeed"
         - ASSETS_DIR="assets"
-        - DEPLOY=true
-    - php: 7.0
-      env: WP_VERSION=latest
-    - php: 5.6
-      env: WP_VERSION=latest
-    - php: 5.4
-      env: WP_VERSION=latest
-    - php: 5.3
-      env: WP_VERSION=latest
-      dist: precise
-    - php: 5.3
-      env: WP_VERSION=4.6
-      dist: precise
+      script: bin/svnsync
 
 before_script:
   - if [[ ! -z "$WP_VERSION" ]] ; then bash bin/install-wp-tests.sh wordpress_test root '' localhost $WP_VERSION; fi
@@ -61,4 +63,8 @@ script:
   # Run PHPUnit
   - if [[ ! -z "$WP_VERSION" ]]; then phpunit; fi
   # Run deploy to WordPress SVN
-  - if [[ "$DEPLOY" == true ]]; then bin/svnsync; fi
+  #- if [[ "$DEPLOY" == true ]]; then bin/svnsync; fi
+
+stages:
+  - test
+  - deploy
