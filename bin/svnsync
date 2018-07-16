@@ -2,32 +2,6 @@
 
 set -eu
 
-#for i in "$@"
-#do
-#case $i in
-#    -p=*|--plugin-name=*)
-#    readonly PLUGIN_NAME="${i#*=}"
-#    shift # past argument=value
-#    ;;
-#    -g=*|--git-repo=*)
-#    readonly GIT_REPO="${i#*=}"
-#    shift # past argument=value
-#    ;;
-#    -u=*|--svn-user=*)
-#    readonly SVN_USER="${i#*=}"
-#    shift # past argument=value
-#    ;;
-#    -a=*|--assets-dir=*)
-#    readonly ASSETS_DIR="${i#*=}"
-#    shift # past argument=value
-#    ;;
-#    *)
-#        echo "Unknown option '${i#*=}', aborting..."
-#        exit
-#    ;;
-#esac
-#done
-
 readonly GIT_DIR="$TRAVIS_BUILD_DIR"
 readonly GIT_ASSETS_DIR="$GIT_DIR/${ASSETS_DIR:=.wordpress.org}"
 readonly SVN_DIR="$TRAVIS_BUILD_DIR/../../svn"
@@ -108,7 +82,7 @@ sync_tag () {
     local tag=$1
 
     if [ -d "$SVN_DIR/tags/$tag" ]; then
-        # Tag is already part of the SVN repository, stop here.
+        #tag is already part of the svn repository, stop here
         return
     fi
 
