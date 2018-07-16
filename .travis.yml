@@ -12,25 +12,29 @@ cache:
     - /tmp/phpcs
     - /tmp/sniffs
 
-matrix:
+stages:
+  - test
+  - deploy
+
+jobs:
   include:
 #    - php: 7.2
 #      env: SNIFF=1
     - stage: test
-      - php: 7.1
-        env: WP_VERSION=latest
-      - php: 7.0
-        env: WP_VERSION=latest
-      - php: 5.6
-        env: WP_VERSION=latest
-      - php: 5.4
-        env: WP_VERSION=latest
-      - php: 5.3
-        env: WP_VERSION=latest
-        dist: precise
-      - php: 5.3
-        env: WP_VERSION=4.6
-        dist: precise
+        - php: 7.1
+          env: WP_VERSION=latest
+        - php: 7.0
+          env: WP_VERSION=latest
+        - php: 5.6
+          env: WP_VERSION=latest
+        - php: 5.4
+          env: WP_VERSION=latest
+        - php: 5.3
+          env: WP_VERSION=latest
+          dist: precise
+        - php: 5.3
+          env: WP_VERSION=4.6
+          dist: precise
     - stage: deploy
       env:
         - GIT_REPO="https://github.com/wpgodspeed/wp-godspeed"
@@ -66,6 +70,3 @@ script:
   # Run deploy to WordPress SVN
   #- if [[ "$DEPLOY" == true ]]; then bin/svnsync; fi
 
-stages:
-  - test
-  - deploy
